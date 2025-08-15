@@ -1,0 +1,579 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.main {
+    background-image: url(/assets/images/bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+    height: 100vh;
+    position: relative;
+}
+
+.main .box {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 80vw;
+    height: 60px;
+    margin: auto;
+    position: relative;
+    top: 10px;
+}
+
+nav img {
+    color: red;
+    width: 148px;
+    height: 40px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+nav button a{
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    font-family: "Martel Sans", serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    height: calc(100% - 60px);
+    position: relative;
+    padding: 0 30px;
+
+}
+
+.hero> :nth-child(1) {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+}
+
+.hero> :nth-child(4) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.hero> :nth-child(5) {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 2px;
+}
+
+.separation {
+    background-color: rgb(48, 47, 47);
+    height: 7px;
+}
+
+.btn {
+    padding: 4px 10px;
+    font-weight: bolder;
+    background-color: rgba(23, 23, 23, 0.2);
+    color: white;
+    border-radius: 4px;
+    border: 1px solid white;
+}
+
+select#language {
+  z-index: 999;
+  position: relative;
+   padding: 4px 10px;
+    font-weight: bolder;
+    background-color: rgba(23, 23, 23, 0.2);
+    color: white;
+    border-radius: 4px;
+    border: 1px solid white;
+}
+
+
+.btn i {
+    font-size: 8px;
+    margin-left: 5px;
+}
+
+.red-si {
+    background-color: red;
+    padding: 4px 10px;
+    font-size: 15px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.main input {
+    margin-top: 20px;
+    border-radius: 4px;
+    padding: 16px;
+    background-color: rgba(23, 23, 23, 0.2);
+}
+
+.main input[type="email"] {
+    width: 375px;
+    padding: 22px 16px 8px;
+    background-color: rgba(23, 23, 23, 0.2);
+    border: 1px solid gray;
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.main .red-gs {
+    background-color: red;
+    color: white;
+    width: 205px;
+    padding: 22px 16px 8px;
+    border-radius: 4px;
+    font-size: 24px;
+    border: none;
+    text-align: center;
+    font-weight: 400;
+}
+
+.trending {
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.trending h2 {
+    font-weight: 500;
+    margin: 10px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cards {
+    margin: 10px;
+    width: 100%;
+    height: 190px;
+    /* border: 2px solid white; */
+    border-radius: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards .movie {
+    width: 140px;
+    height: 190px;
+    /* border: 2px solid white; */
+    border-radius: 14px;
+    display: flex;
+    background-color: red;
+}
+
+.cards .movie img {
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+}
+
+.cards img:hover {
+    transform: scale(1.1);
+}
+
+.reasons {
+    width: 80%;
+    margin: auto;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.reasons h2 {
+    font-weight: 500;
+    margin: 10px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.reasons .boxes {
+    display: flex;
+    width: 100%;
+}
+
+.reasons .box {
+    width: 380px;
+    height: 250px;
+    background-color: rgb(123, 135, 138);
+    border-radius: 14px;
+    font-size: 16px;
+    margin-left: 15px;
+}
+
+.box i {
+    color: white;
+    width: 72px;
+    height: 72px;
+    position: relative;
+    left: 320px;
+    top: 90px;
+}
+
+.reasons .boxes .h-txt {
+    color: white;
+    margin: 10px;
+}
+
+.reasons .boxes .n-txt {
+    color: white;
+    margin: 10px;
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+.faq {
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq h2 {
+    font-weight: 500;
+    margin: 10px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.faq-container {
+    width: 100%;
+    margin: auto;
+}
+
+.faqbox {
+    background-color: #2d2d2d;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.faq-question {
+    padding: 24px;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2d2d2d;
+    color: white;
+}
+
+.faq-question:hover {
+    background-color: #414141;
+}
+
+.faq-answer {
+    color: white;
+    display: none;
+    padding: 15px;
+    background-color: #2d2d2d
+}
+
+.login-feature {
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.login-feature span {
+    color: white;
+    font-size: 16px;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    margin: 4px;
+}
+
+.login .input-email {
+    border-radius: 4px;
+    font-size: 22px;
+    margin: 8px;
+}
+
+.input-email[type="text"] {
+    width: 600px;
+    padding: 10px;
+    background-color: rgba(23, 23, 23, 0.2);
+    border: 1px solid gray;
+}
+
+.login .red-gs {
+    background-color: red;
+    color: white;
+    width: 205px;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 25px;
+    border: none;
+    text-align: center;
+    font-weight: 500;
+}
+
+footer {
+    color: white;
+    max-width: 80vw;
+    margin: auto;
+    padding: 24px;
+}
+
+footer .question {
+    padding: 6px;
+    margin: 30px 0;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+.footer-items {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.footer-items a {
+    color: white;
+    font-size: 14px;
+    padding: 8px;
+}
+
+.footer-button .btn {
+    padding: 4px 25px;
+    margin-top: 20px;
+    font-weight: bolder;
+    background-color: rgba(23, 23, 23, 0.2);
+    color: white;
+    border-radius: 4px;
+    border: 1px solid white;
+}
+
+.country {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+
+@media only screen and (max-width:455px) {
+    .main {
+        max-width: 100vw;
+        max-height: 100vh;
+        position: relative;
+    }
+
+    .main .box {
+       height: 100vh;
+        width: 100%;
+        position: absolute;
+    }
+
+    nav {
+        max-width: 80vw;
+        height:30%;
+        top: 20px;
+    }
+
+    nav img {
+        width: 90px;
+        height: 40px;
+        right: 30px;
+    }
+
+    .btn {
+        padding: 3px 5px;
+        font-size: 15px;
+    }
+
+    .btn i {
+        font-size: 7px;
+        margin-left: 5px;
+    }
+
+    .red-si {
+        padding: 3px 8px;
+        font-size: 15px;
+    }
+
+    .hero {
+        height: 70%;
+        color: white;
+        /* height: calc(100% - 30px); */
+        position: relative;
+        padding: 0 30px;
+
+    }
+
+    .hero> :nth-child(1) {
+        /* margin-top: 100px; */
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .hero> :nth-child(4) {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .hero> :nth-child(5) {
+        font-size: 10px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 2px;
+    }
+
+    .main .inp-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 7px;
+        text-align: center;
+    }
+
+    .main input {
+        margin-top: 20px;
+        padding: 12px;
+    }
+
+    .main input[type="text"] {
+        width: 300px;
+        padding: 24px 16px 8px;
+    }
+
+    .main .red-gs {
+        width: 150px;
+        padding: 8px 10px 8px;
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 22px;
+    }
+
+    .reasons {
+        max-width: 80vw;
+        width: 100%;
+        margin: auto;
+    }
+
+    .reasons .boxes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .reasons .box {
+        width: 350px;
+        height: 220px;
+    }
+
+    .login-feature {
+        width: 80%;
+        margin: auto;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .login-feature span {
+        color: white;
+        font-size: 12px;
+    }
+
+    .login {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 16px;
+        margin: 4px;
+    }
+
+    .login .input-email {
+        font-size: 18px;
+        margin: 8px;
+    }
+
+    .input-email[type="text"] {
+        width: 300px;
+        padding: 10px;
+    }
+
+    .login .red-gs {
+        width: 150px;
+        padding: 8px 10px 8px;
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 22px;
+    }
+
+}

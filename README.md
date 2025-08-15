@@ -32,4 +32,4 @@ Edit
 ![Screenshot](assets/screenshot.png)
 
 ## 🔗 Live Demo
-[View Project](https://github.com/NamanJain-git/Netflix-UI-Clone.git)
+[View Project](https://namanjain-git.github.io/Netflix-UI-Clone/)

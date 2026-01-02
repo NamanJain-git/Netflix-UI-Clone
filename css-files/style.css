@@ -246,7 +246,7 @@ select#language {
 .reasons .box {
     width: 380px;
     height: 250px;
-    background-color: rgb(123, 135, 138);
+    background: linear-gradient(to right, #da6d57, #a5426f);
     border-radius: 14px;
     font-size: 16px;
     margin-left: 15px;

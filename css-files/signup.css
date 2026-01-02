@@ -81,6 +81,13 @@ body {
   background: #f40612;
 }
 
+.signup-form button a{
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+}
+
 .login-link {
   margin-top: 1rem;
 }

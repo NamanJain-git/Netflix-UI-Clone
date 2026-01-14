@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NETLIX Clone</title>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="css-files/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-     <!-- <script src="js-files/script.js"></script> -->
-     
+    <!-- <script src="js-files/script.js"></script> -->
+
 </head>
 
 <body>
@@ -19,7 +20,7 @@
                 <img width="60" src="./assets/images/logo.svg">
             </span>
             <div>
-               <select id="language">
+                <select id="language">
                     <option value="english">English</option>
                     <option value="hindi">Hindi</option>
                     <option value="tamil">Tamil</option>
@@ -51,7 +52,7 @@
     <section class="trending">
         <h2>Trending Now</h2>
 
-        <div class="cards">
+        <div class="cards" id="trending-slider">
             <div class="movie">
                 <img src="assets/images/m1.jpg">
             </div>
@@ -206,19 +207,21 @@
 
         <div class="footer-button">
             <select id="language">
-                    <option value="english">English</option>
-                    <option value="hindi">Hindi</option>
-                    <option value="tamil">Tamil</option>
-                    <option value="telugu">Telugu</option>
-                </select>
+                <option value="english">English</option>
+                <option value="hindi">Hindi</option>
+                <option value="tamil">Tamil</option>
+                <option value="telugu">Telugu</option>
+            </select>
         </div>
         <div class="country">
             <span>Netflix India</span>
         </div>
     </footer>
 
-
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="js-files/script.js"></script>
+
+
 </body>
 
 </html>

@@ -45,3 +45,21 @@ if (isLoggedIn === "true") {
     window.location.href = "authentication.html?action=signup";
   });
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const slider = document.getElementById("trending-slider");
+
+  if (!slider) return;
+
+  new Flickity(slider, {
+  cellAlign: "left",
+  contain: true,
+  wrapAround: true,
+  pageDots: false,
+  autoPlay: 2000,
+  pauseAutoPlayOnHover:false
+});
+
+
+});
+

@@ -19,10 +19,3 @@ function authpage(){
 
 document.getElementById("signlogbtn").addEventListener("click", authpage);
 
-if (isLoggedIn === "true") {
-    // User is logged in → show Logout
-   document.getElementById("signlogbtn").textContent = "Logout";
-
-// if (localStorage.getItem("isLoggedIn") === "true") {
-    
-// }

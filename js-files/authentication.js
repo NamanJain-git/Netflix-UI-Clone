@@ -58,7 +58,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     if (email === storedUser.email && password === storedUser.password) {
-      localStorage.setItem("isLoggedIn", "true");
+     sessionStorage.setItem("isLoggedIn", "true");
+
       window.location.href = "index.html";
     } else {
       alert("Invalid email or password");

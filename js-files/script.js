@@ -24,14 +24,16 @@ document.querySelectorAll('.faq-question').forEach(item => {
 // }
 
 const authBtn = document.getElementById("signlogbtn");
-const isLoggedIn = localStorage.getItem("isLoggedIn");
+const isLoggedIn = sessionStorage.getItem("isLoggedIn");
+
 
 if (isLoggedIn === "true") {
 
   authBtn.textContent = "Logout";
 
   authBtn.addEventListener("click", function () {
-    localStorage.removeItem("isLoggedIn");
+   sessionStorage.removeItem("isLoggedIn");
+
     window.location.href = "authentication.html";
   });
 

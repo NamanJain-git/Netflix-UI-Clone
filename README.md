@@ -28,8 +28,5 @@ Edit
 - CSS3
 - JavaScript (ES6+)
 
-## 📸 Preview
-![Screenshot](assets/screenshot.png)
-
 ## 🔗 Live Demo
-[View Project](https://namanjain-git.github.io/Netflix-UI-Clone/)
+https://ui-clone-by-naman.netlify.app

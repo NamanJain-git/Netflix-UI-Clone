@@ -11,11 +11,35 @@ document.querySelectorAll('.faq-question').forEach(item => {
 });
 
 // const authBtn = document.getElementById("signlogbtn");
- const isLoggedIn = localStorage.getItem("isLoggedIn");
+//  const isLoggedIn = localStorage.getItem("isLoggedIn");
 
-function authpage(){
-    window.location.href="authentication.html";
+// function authpage(){
+//     window.location.href="authentication.html";
+// }
+
+// authBtn.addEventListener("click", authpage);
+
+// if (isLoggedIn === "true") {
+//     authBtn.textContent = "Logout";
+// }
+
+const authBtn = document.getElementById("signlogbtn");
+const isLoggedIn = localStorage.getItem("isLoggedIn");
+
+if (isLoggedIn === "true") {
+
+  authBtn.textContent = "Logout";
+
+  authBtn.addEventListener("click", function () {
+    localStorage.removeItem("isLoggedIn");
+    window.location.href = "authentication.html";
+  });
+
+} else {
+ 
+  authBtn.textContent = "Sign Up";
+
+  authBtn.addEventListener("click", function () {
+    window.location.href = "authentication.html?action=signup";
+  });
 }
-
-document.getElementById("signlogbtn").addEventListener("click", authpage);
-
